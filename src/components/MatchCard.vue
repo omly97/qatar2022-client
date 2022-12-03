@@ -81,7 +81,7 @@ export default {
             return `Match ${this.data.Match.MatchNumber} ${suffx}`
         },
         isUpcomingGame() {
-            return this.data.Match.MatchStatus == 1
+            return [1, 12].includes(this.data.Match.MatchStatus)
         },
         isGameInProgess() {
             return this.data.Match.MatchStatus == 3
