@@ -1,7 +1,7 @@
 <template>
     <v-card outlined color="secondary" class="d-flex flex-column pa-2">
         <div class="white--text text-center text-caption">
-            <span>{{ `Match ${data.Match.MatchNumber} - ${data.GroupName}` }}</span>
+            <span>{{ titleComputed }}</span>
         </div>
 
         <v-sheet class="d-flex justify-space-around align-center" width="100%" color="transparent">
@@ -22,7 +22,7 @@
             <template v-if="isUpcomingGame">
                 <div class="d-flex flex-column text-center text-caption white--text">
                     <span>VS</span>
-                    <span>{{ data.Match.MatchDate }}</span>
+                    <span>{{ data.Match.MatchDate | time }}</span>
                 </div>
             </template>
 
@@ -76,6 +76,10 @@ export default {
         data: {}
     }),
     computed: {
+        titleComputed() {
+            const suffx = this.data.GroupName != null ? ` - ${this.data.GroupName}` : ''
+            return `Match ${this.data.Match.MatchNumber} ${suffx}`
+        },
         isUpcomingGame() {
             return this.data.Match.MatchStatus == 1
         },
@@ -91,7 +95,7 @@ export default {
         if (! this.isPlayedGame) {
             setInterval(() => {
                 getLiveMatch(this.data.Match.IdMatch).then(response => {
-                    this.data = response
+                    this.data = Object.assign(response, this.data)
                 })
             }, 5000);
         }

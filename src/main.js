@@ -11,6 +11,22 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 Vue.use(VueSweetalert2);
 Vue.config.productionTip = process.env.VUE_APP_PRODUCTION_TIP
 
+Vue.filter('shortDate', (date) => {
+  return moment(date).format('Do MMM YYYY')
+})
+
+Vue.filter('longDate', (date) => {
+  return moment(date).format('dddd Do MMMM YYYY')
+})
+
+Vue.filter('shortDateTime', (date) => {
+  return moment(date).format('Do MMM YYYY à HH:mm')
+})
+
+Vue.filter('time', (date) => {
+  return moment(date).format('HH:mm')
+})
+
 new Vue({
   vuetify,
   router,
