@@ -7,7 +7,7 @@
     >
         <v-avatar rounded size="90">
         <v-img
-            :src="require('@/assets/img/qatar2022V.webp')"
+            :src="require('@/assets/img/qatar2022V.png')"
         ></v-img>
         </v-avatar>
         <v-card-text class="text-center white--text">

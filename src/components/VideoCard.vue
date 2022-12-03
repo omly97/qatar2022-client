@@ -1,7 +1,7 @@
 <template>
     <v-card flat color="transparent">
         <v-img
-            :lazy-src="require('@/assets/img/qatar2022V.webp')"
+            :lazy-src="require('@/assets/img/qatar2022V.png')"
             :src="video.image.src"
         >
             <template v-slot:placeholder>

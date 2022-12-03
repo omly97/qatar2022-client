@@ -24,7 +24,7 @@
                             {{ i+1 }}
                             <v-avatar tile class="mx-2">
                                 <v-img
-                                    :lazy-src="require('@/assets/img/qatar2022V.webp')"
+                                    :lazy-src="require('@/assets/img/qatar2022V.png')"
                                     :src="item.Team.PictureUrl"
                                 ></v-img>
                             </v-avatar>

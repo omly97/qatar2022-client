@@ -3,7 +3,7 @@
         <v-list-item @click="selectVideo">
             <v-list-item-avatar rounded size="90">
                 <v-img
-                    :lazy-src="require('@/assets/img/qatar2022V.webp')"
+                    :lazy-src="require('@/assets/img/qatar2022V.png')"
                     :src="video.image.src"
                 >
                     <template v-slot:placeholder>

@@ -9,7 +9,7 @@
             <div>
                 <v-avatar size="50">
                     <v-img
-                        :lazy-src="require('@/assets/img/qatar2022V.webp')"
+                        :lazy-src="require('@/assets/img/qatar2022V.png')"
                         :src="data.HomeTeam.TeamPictureUrl"
                     ></v-img>
                 </v-avatar>
@@ -48,7 +48,7 @@
             <div>
                 <v-avatar size="50">
                     <v-img
-                        :lazy-src="require('@/assets/img/qatar2022V.webp')"
+                        :lazy-src="require('@/assets/img/qatar2022V.png')"
                         :src="data.AwayTeam.TeamPictureUrl"
                     ></v-img>
                 </v-avatar>
