@@ -3,9 +3,10 @@
         outlined
         color="secondary"
         class="d-flex align-center flex-column py-2"
+        height="170"
         :to="{ name: 'videos-list', params: { sectionId: section.idSection } }"
     >
-        <v-avatar rounded size="90">
+        <v-avatar rounded size="80">
         <v-img
             :src="require('@/assets/img/qatar2022V.png')"
         ></v-img>

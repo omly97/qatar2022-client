@@ -17,9 +17,11 @@
                 <tr v-for="(item, i) in rankin.GroupRanks" :key="i">
                     <td>
                         <v-chip
+                            small
                             color="transparent"
                             label
                             text-color="white"
+                            class="px-0 ma-0"
                         >
                             {{ i+1 }}
                             <v-avatar tile class="mx-2">

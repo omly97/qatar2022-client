@@ -15,20 +15,11 @@
             <v-spacer></v-spacer>
             <div class="d-flex align-center ml-10">
                 <v-img
-                    alt="Vuetify Logo"
+                    alt="Qatar Logo"
                     class="shrink mr-2"
                     contain
                     :src="require('@/assets/img/qatar2022H.png')"
                     transition="scale-transition"
-                    width="100"
-                />
-
-                <v-img
-                    alt="Vuetify Name"
-                    class="shrink mt-1 hidden-sm-and-down"
-                    contain
-                    min-width="100"
-                    :src="require('@/assets/img/qatar2022H.png')"
                     width="100"
                 />
             </div>
