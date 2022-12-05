@@ -16,7 +16,7 @@
             <v-row dense>
                 <v-col
                     v-for="(item, i) in rankinData" :key="i"
-                    cols="12" xl="3" lg="3" md="3"
+                    cols="12" xl="3" lg="4" md="4"
                 >
                     <GroupRankinTable :rankin="item"></GroupRankinTable>
                 </v-col>

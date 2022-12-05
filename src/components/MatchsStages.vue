@@ -7,14 +7,14 @@
 
         <!-- KnockoutStages -->
         <template v-else>
-            <div class="d-flex flex-column">
+            <v-container class="d-flex flex-column">
                 <MatchCard
                     v-for="(item, i) in stageData.Matches"
                     :key="i"
                     :match="item"
                     class="mb-1"
                 ></MatchCard>
-            </div>
+            </v-container>
         </template>
     </div>
 </template>
