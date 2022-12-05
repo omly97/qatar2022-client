@@ -103,20 +103,28 @@ export default {
         }
     },
     created() {
+        // set match data
         this.matchData = this.match
+
+        // set intervel fetch data
         if (! this.isPlayedGame) {
             setInterval(() => {
-                getLiveMatch(this.matchData.Match.IdMatch).then(response => {
-                    // Get updates
-                    let updates = response
-
-                    // add undefined const attr in response to updates
-                    updates.Match.MatchNumber = this.matchData.Match.MatchNumber
-
-                    // save updates in date
-                    this.matchData = updates
-                })
+                this.fetchLiveData()
             }, 5000);
+        }
+    },
+    methods: {
+        fetchLiveData() {
+            getLiveMatch(this.matchData.Match.IdMatch).then(response => {
+                // Get updates
+                let updates = response
+
+                // add undefined const attr in response to updates
+                updates.Match.MatchNumber = this.matchData.Match.MatchNumber
+
+                // save updates in date
+                this.matchData = updates
+            })
         }
     }
 }
