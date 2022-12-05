@@ -30,9 +30,9 @@ const router = new VueRouter({
         },
 
         {
-            path: '/rankin',
-            name: 'rankin',
-            component: () => import('../pages/RankinPage.vue'),
+            path: '/stage',
+            name: 'stage',
+            component: () => import('../pages/StagePage.vue'),
         },
 
         /**

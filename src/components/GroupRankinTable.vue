@@ -17,7 +17,7 @@
                 <tr v-for="(item, i) in rankin.GroupRanks" :key="i">
                     <td>
                         <v-chip
-                            small
+                            x-small
                             color="transparent"
                             label
                             text-color="white"
@@ -30,7 +30,7 @@
                                     :src="item.Team.PictureUrl"
                                 ></v-img>
                             </v-avatar>
-                            {{ item.Team.Abbreviation }}
+                            <span class="font-weight-medium">{{ item.Team.Abbreviation }}</span>
                         </v-chip>
                     </td>
                     <td>{{ item.Played }}</td>
@@ -48,7 +48,7 @@
 
 <script>
 export default {
-    name: 'RankinGroupTable',
+    name: 'GroupRankinTable',
     props: {
         rankin: {
             type: Object,

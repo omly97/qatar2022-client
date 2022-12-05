@@ -28,7 +28,7 @@
                 target="_blank"
                 text
             >
-                <span class="text-lowercase">omly97</span>
+                <!-- <span class="text-lowercase">omly97</span> -->
                 <v-icon>mdi-github</v-icon>
             </v-btn>
         </v-app-bar>
@@ -51,19 +51,19 @@ export default {
         sidebar: true,
         menu: [
             {
-                title: 'Welcome',
+                title: 'Accueil',
                 routeName: 'welcome',
-                icon: 'mdi-circle-slice-6'
+                icon: 'mdi-soccer'
             },
             {
                 title: 'Videos',
                 routeName: 'videos-sections',
-                icon: 'mdi-toolbox-outline'
+                icon: 'mdi-youtube'
             },
             {
                 title: 'Classement',
-                routeName: 'rankin',
-                icon: 'mdi-clipboard-text-clock-outline'
+                routeName: 'stage',
+                icon: 'mdi-table'
             }
         ]
     }),

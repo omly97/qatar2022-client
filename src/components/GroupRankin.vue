@@ -18,7 +18,7 @@
                     v-for="(item, i) in rankinData" :key="i"
                     cols="12" xl="3" lg="3" md="3"
                 >
-                    <RankinGroupTable :rankin="item"></RankinGroupTable>
+                    <GroupRankinTable :rankin="item"></GroupRankinTable>
                 </v-col>
             </v-row>
         </template>
@@ -26,17 +26,17 @@
 </template>
 
 <script>
-import RankinGroupTable from '@/components/RankinGroupTable.vue'
+import GroupRankinTable from '@/components/GroupRankinTable.vue'
 import useRankin from '@/api/rankin'
 const { getRankinData } = useRankin()
 
 export default {
-    name: 'RankinPage',
+    name: 'GroupRankin',
     data: () => ({
         rankinData: [],
         loading: false
     }),
-    components: { RankinGroupTable },
+    components: { GroupRankinTable },
     created() {
         this.fetchRankinData()
     },

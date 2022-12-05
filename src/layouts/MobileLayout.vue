@@ -31,7 +31,7 @@
                 text
             >
                 <v-icon>mdi-github</v-icon>
-                <span class="text-lowercase text-caption">omly97</span>
+                <!-- <span class="text-lowercase text-caption">omly97</span> -->
             </v-btn>
         </v-app-bar>
 
@@ -78,7 +78,7 @@ export default {
             },
             {
                 title: 'Classement',
-                routeName: 'rankin',
+                routeName: 'stage',
                 icon: 'mdi-table'
             }
         ]
