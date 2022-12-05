@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="px-0">
         <template v-if="loading">
             <div class="d-flex flex-column">
                 <v-skeleton-loader
@@ -27,7 +27,7 @@
                     :key="item.IdStage"
                     :href="`#${item.IdStage}`"
                 >
-                    <span class="text-caption">{{ item.Name }}</span>
+                    <span class="text-caption text-capitalize">{{ item.Name }}</span>
                 </v-tab>
             </v-tabs>
 
