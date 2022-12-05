@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <div>
         <template v-if="loading">
             <div class="d-flex flex-column">
                 <v-skeleton-loader
@@ -22,7 +22,7 @@
                 </v-col>
             </v-row>
         </template>
-    </v-container>
+    </div>
 </template>
 
 <script>
